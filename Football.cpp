@@ -1,24 +1,26 @@
 #include <iostream>
-
+#include<string>
+#include<algorithm>
+#include <cstdio>
 using namespace std;
 
 int main()
 {
-    int b = 0;
-    char a[200];
-    cin>>a;
-    for(int i = 1; a[i] != '\0'; i++){
-        if(a[i-1] == a[i]){
-            b++;
-            if(b == 6){
-                cout<<"YES";
-                return 0;
-            }
+    string s;
+    string s1,s2;
+    getline(cin,s);
+    s1="1111111";
+    s2="0000000";
+    
+    if (s.find(s1) != std::string::npos || s.find(s2) != std::string::npos) 
+        {
+            std::cout << "YES" << '\n';
         }
-        else{
-            b = 0;
+    else
+        {
+            std::cout << "NO" << '\n';
         }
-    }
-    cout<<"NO";
-    return 0;
+   
+   
+   return 0;
 }
