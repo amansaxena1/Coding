@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, ans, b, q, d, bt, tq;
+	cin >> n;
+	for(int i = 0; i < n; i++){
+	    cin >> b >> q >> d;
+	    tq = 0;
+	    for(int j = 1; j <= b; j++){
+	        cin >> bt;
+	        tq = tq + bt;
+	    }
+	    ans = tq/q;
+	    if(ans > d){
+	        cout << d << endl;
+	    }
+	    else{
+	        cout << ans << endl;
+	    }
+	}
+	return 0;
+}
