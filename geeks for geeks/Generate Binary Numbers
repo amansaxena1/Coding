@@ -1,0 +1,22 @@
+int binary(int i){
+    int a=0,c=0;
+    while(i>0){
+	    a = a + ((pow(10,c))*(i%2));
+        i = i/2;
+        c++;
+    }
+    return a;
+}
+vector<string> generate(int N)
+{
+    int no;
+    string str="";
+    vector<string> v;
+	for(int i=1;i<=N;i++){
+	    no = binary(i);
+	    str=to_string(no);
+	    v.push_back(str);
+	    str="";
+	}
+	return v;
+}
