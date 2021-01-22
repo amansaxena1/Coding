@@ -1,0 +1,56 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int isPrimeNumber(long long n) {
+   bool isPrime = true;
+
+   for(long long i = 2; i <= n/2; i++) {
+      if (n%i == 0) {
+         isPrime = false;
+         break;
+      }
+   }  
+   return isPrime;
+}
+
+int main() {
+    long long n,i,l=0,r=0;
+    bool a=false;
+    cin>>n;
+    i = n;
+    while(true){
+        a = isPrimeNumber(i);
+        if(a){
+            break;
+        }
+        else{
+            l++;
+        }
+        i--;
+   }
+    a=false;
+    i=n;
+    while(true){
+        a = isPrimeNumber(i);
+        if(a){
+            break;
+        }
+        else{
+            r++;
+        }
+        i++;
+    }
+    if(l>=r){
+        cout<<r;
+    }
+    else{
+        cout<<(-1*l);
+    }
+    
+    return 0;
+}
