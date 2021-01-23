@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int x=0,y=0,z=0,p=0,c=0,r=0;
+        for(int i=a;i<=b;i++){
+            p=i;
+            while(p!=0){
+                r=p%10;
+                if(r==3)
+                    x++;
+                if(r==6)
+                    y++;
+                if(r==9)
+                    z++;
+                p=p/10;
+            }
+            if(x!=0){
+                if(x==y&&y==z)
+                    c++;
+            }
+            x=0;
+            y=0;
+            z=0;
+        }
+        System.out.println(c);
+    }
+}
