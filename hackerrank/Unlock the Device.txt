@@ -1,0 +1,112 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a;
+    cin>>a;
+    if(a == 1){
+        cout<<"a"<<"\n";
+    }
+    else if(a == 2){
+        cout<<"*a*"<<"\n";
+        cout<<"2a2"<<"\n";
+        cout<<"*a*"<<"\n";
+    }
+    else if(a == 3){
+        cout<<"**a**"<<"\n";
+        cout<<"*2a2*"<<"\n";
+        cout<<"c2a2c"<<"\n";
+        cout<<"*2a2*"<<"\n";
+        cout<<"**a**"<<"\n";
+    }
+    else if(a == 4){
+        cout<<"***a***"<<"\n";
+        cout<<"**2a2**"<<"\n";
+        cout<<"*c2a2c*"<<"\n";
+        cout<<"4c2a2c4"<<"\n";
+        cout<<"*c2a2c*"<<"\n";
+        cout<<"**2a2**"<<"\n";
+        cout<<"***a***"<<"\n";
+    }
+    else if(a == 5){
+        cout<<"****a****"<<"\n";
+        cout<<"***2a2***"<<"\n";
+        cout<<"**c2a2c**"<<"\n";
+        cout<<"*4c2a2c4*"<<"\n";
+        cout<<"e4c2a2c4e"<<"\n";
+        cout<<"*4c2a2c4*"<<"\n";
+        cout<<"**c2a2c**"<<"\n";
+        cout<<"***2a2***"<<"\n";
+        cout<<"****a****"<<"\n";
+    }
+    else if(a == 6){
+        cout<<"*****a*****"<<"\n";
+        cout<<"****2a2****"<<"\n";
+        cout<<"***c2a2c***"<<"\n";
+        cout<<"**4c2a2c4**"<<"\n";
+        cout<<"*e4c2a2c4e*"<<"\n";
+        cout<<"6e4c2a2c4e6"<<"\n";
+        cout<<"*e4c2a2c4e*"<<"\n";
+        cout<<"**4c2a2c4**"<<"\n";
+        cout<<"***c2a2c***"<<"\n";
+        cout<<"****2a2****"<<"\n";
+        cout<<"*****a*****"<<"\n";
+    }
+    else if(a == 7){
+        cout<<"******a******"<<"\n";
+        cout<<"*****2a2*****"<<"\n";
+        cout<<"****c2a2c****"<<"\n";
+        cout<<"***4c2a2c4***"<<"\n";
+        cout<<"**e4c2a2c4e**"<<"\n";
+        cout<<"*6e4c2a2c4e6*"<<"\n";
+        cout<<"g6e4c2a2c4e6g"<<"\n";
+        cout<<"*6e4c2a2c4e6*"<<"\n";
+        cout<<"**e3c2a2c3e**"<<"\n";
+        cout<<"***3c2a2c3***"<<"\n";
+        cout<<"****c2a2c****"<<"\n";
+        cout<<"*****2a2*****"<<"\n";
+        cout<<"******a******"<<"\n";
+    }
+    else if(a == 8){
+        cout<<"*******a*******"<<"\n";
+        cout<<"******2a2******"<<"\n";
+        cout<<"*****c2a2c*****"<<"\n";
+        cout<<"****4c2a2c4****"<<"\n";
+        cout<<"***e4c2a2c4e***"<<"\n";
+        cout<<"**6e4c2a2c4e6**"<<"\n";
+        cout<<"*g6e4c2a2c4e6g*"<<"\n";
+        cout<<"8g6e4c2a2c4e6g8"<<"\n";
+        cout<<"*g6e4c2a2c4e6g*"<<"\n";
+        cout<<"**6e4c2a2c4e6**"<<"\n";
+        cout<<"***e4c2a2c4e***"<<"\n";
+        cout<<"****4c2a2c4****"<<"\n";
+        cout<<"*****c2a2c*****"<<"\n";
+        cout<<"******2a2******"<<"\n";
+        cout<<"*******a*******"<<"\n";
+    }
+    else if(a == 9){
+        cout<<"********a********"<<"\n";
+        cout<<"*******2a2*******"<<"\n";
+        cout<<"******c2a2c******"<<"\n";
+        cout<<"*****4c2a2c4*****"<<"\n";
+        cout<<"****e4c2a2c4e****"<<"\n";
+        cout<<"***6e4c2a2c4e6***"<<"\n";
+        cout<<"**g6e4c2a2c4e6g**"<<"\n";
+        cout<<"*8g6e4c2a2c4e6g8*"<<"\n";
+        cout<<"i8g6e4c2a2c4e6g8i"<<"\n";
+        cout<<"*8g6e4c2a2c4e6g8*"<<"\n";
+        cout<<"**g6e4c2a2c4e6g**"<<"\n";
+        cout<<"***6e4c2a2c4e6***"<<"\n";
+        cout<<"****e4c2a2c4e****"<<"\n";
+        cout<<"*****4c2a2c4*****"<<"\n";
+        cout<<"******c2a2c******"<<"\n";
+        cout<<"*******2a2*******"<<"\n";
+        cout<<"********a********"<<"\n";
+    }
+    return 0;
+}
