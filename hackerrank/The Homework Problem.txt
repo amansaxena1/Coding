@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long int n,a,q,p=1;
+    cin>>n;
+    for(int i = 0; i < n; i++){
+        cin>>a;
+        p = p * a;
+    }
+    q = 1;
+    a = 1;
+    while(true){
+        q = pow(a,n);
+        if(q>p){
+            cout<<a;
+            break;
+        }
+        a++;
+    }
+    
+    return 0;
+}
