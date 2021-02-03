@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+string CountOccurrences (string S) {
+
+  string str="",add;
+  int n = 0;
+  while(n<S.length()){
+      int found = (int)str.find(S[n]);
+      if(found == -1){
+            str = str + S[n];
+            add = to_string(count(S.begin(),S.end(),S[n]));
+            str = str + add;   
+      }
+      add="";
+      n++;
+  }
+  return str;
+}
+int main() {
+
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int T;
+    cin >> T;
+    for(int t_i = 0; t_i < T; t_i++)
+    {
+        string S;
+        cin>>S;
+
+        string out_;
+        out_ = CountOccurrences(S);
+        cout << out_;
+        cout << "\n";
+    }
+}
